@@ -14,7 +14,6 @@ public class Sorts{
           data[j+1] = data[j];
           data[j] = holder;
           inOrder = true;
-          System.out.println(Arrays.toString(data));
         }
       }
     }
