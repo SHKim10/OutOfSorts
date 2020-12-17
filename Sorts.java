@@ -10,9 +10,9 @@ public class Sorts{
       inOrder = false;
       for (int j = 0; j < data.length - i-1; j++){
         if (data[j] > data[j+1]){
-          int holder = data[j+1];
+          int hold = data[j+1];
           data[j+1] = data[j];
-          data[j] = holder;
+          data[j] = hold;
           inOrder = true;
         }
       }
@@ -21,11 +21,11 @@ public class Sorts{
 
   public static void selectionSort(int[] data){
     for (int i = 0; i < data.length; i++){
-      for (int j = i; j < data.length; j++){
-        if (data[i] < data[j]){
-          int holder = data[i];
+      for (int j = i+1; j < data.length; j++){
+        if (data[i] > data[j]){
+          int hold = data[i];
           data[i] = data[j];
-          data[j] =  holder;
+          data[j] =  hold;
         }
       }
     }
