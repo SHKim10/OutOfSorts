@@ -1,3 +1,4 @@
+import java.util.*;
 public class Sorts{
   /**Bubble sort of an int array.
   *Upon completion, the elements of the array will be in increasing order.
@@ -13,6 +14,7 @@ public class Sorts{
           data[j+1] = data[j];
           data[j] = holder;
           inOrder = true;
+          System.out.println(Arrays.toString(data));
         }
       }
     }
